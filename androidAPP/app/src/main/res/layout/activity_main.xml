@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_simple"
+    android:padding="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <!-- Logo ANCS -->
+        <ImageView
+            android:id="@+id/ivAncsLogo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ancs_logo"
+            android:adjustViewBounds="true"
+            android:layout_alignParentStart="true" />
+
+        <!-- Bloc pour Drapeau + Textes -->
+        <LinearLayout
+            android:id="@+id/headerTextContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@id/ivAncsLogo"
+            android:layout_alignTop="@id/ivAncsLogo"
+            android:layout_marginStart="15dp">
+
+            <!-- Drapeau -->
+            <ImageView
+                android:id="@+id/ivDrapeau"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/flag_tunisia"
+                android:layout_gravity="top"
+                android:layout_marginTop="4dp" />
+
+            <!-- Textes -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="République Tunisienne"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ministère des Technologies de la Communication"
+                    android:textColor="#888888"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!-- Image Slider (Carrousel) -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"/>
+    <!-- Contenu principal -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surveillance DÉSACTIVÉE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#C62828"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnToggleMonitoring"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activer la surveillance"
+                android:backgroundTint="#0D47A1"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Résultat de l'analyse"
+                android:textSize="16sp"
+                android:layout_marginTop="32dp"
+                android:textColor="#333333" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
