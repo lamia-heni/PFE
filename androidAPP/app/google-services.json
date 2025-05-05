@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "267528143763",
+    "firebase_url": "https://signuploginclone-default-rtdb.firebaseio.com",
+    "project_id": "signuploginclone",
+    "storage_bucket": "signuploginclone.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267528143763:android:73f41099668503eca31e66",
+        "android_client_info": {
+          "package_name": "com.example.malware_detection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0uIk3ykKcdJ_YU92CYzqDSvCV5jMwIIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267528143763:android:d33c147aab408ee1a31e66",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0uIk3ykKcdJ_YU92CYzqDSvCV5jMwIIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267528143763:android:e849e7a9a3197811a31e66",
+        "android_client_info": {
+          "package_name": "com.example.signuploginrealtime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0uIk3ykKcdJ_YU92CYzqDSvCV5jMwIIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
